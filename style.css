@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.logo-txt,.heading-news{
+    font-family: "Jaini", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.heading-news{
+    text-align: center;
+    padding: 10px;
+    font-size: 44px;
+}
+.hed-txt{
+    color:#C90909;
+}
+.bg-colornav{
+    background-color: rgb(202, 223, 240);
+}
+.nav-bar-allcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.nav-route-items{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav-route-items .list-items{
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.sidebar-items{
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+    gap:22px;
+   justify-content: flex-end;
+    font-weight: 600;
+    font-weight: 600;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+.nav-items-bars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-items-bars i{
+    display: none;
+}
+.maincontent{
+    padding-top: 40px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.srch-input{
+    height: 45px;
+    border-radius: 18px;
+      padding: 5px;
+      box-shadow: -5px 5px 50px 0px rgb(105, 215, 248);
+    outline: none;
+}
+.logo-ancor{
+    text-decoration: none;
+}
+@media only screen and (min-width: 240px) and (max-width: 375px){
+    .nav-items-bars i{
+        display: block;
+    }
+   .nav-route-items{
+    display: none;
+   }    
+   .logo-txt{
+    font-size: 16px;
+   } 
+   .nav-bar-allcontent {
+    height: 40px;
+}
+.sidebar-items{
+    display: flex;
+    text-align: end;
+}
+}
